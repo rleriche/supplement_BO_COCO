@@ -1,0 +1,175 @@
+\providecommand{\bbobecdfcaptionsinglefunctionssingledim}[1]{
+Empirical cumulative distribution of simulated (bootstrapped)
+             runtimes, measured in number of objective function evaluations 
+             divided by dimension (FEvals/DIM) in 
+             dimension #1 and for those targets in
+             $10^{[-8..2]}$ that have just not been reached by 
+             the reference algorithm in a given budget of $k$ $\times$ DIM, with 
+             $8$ different values of $k$ chosen 
+             equidistant in logscale within the interval $\{0.5, \dots, 50\}$.
+}
+\providecommand{\cocoversion}{\hspace{\textwidth}\scriptsize\sffamily{}\color{Gray}Data produced with COCO v2.3.3.84}
+\providecommand{\numofalgs}{5}
+\providecommand{\bbobECDFslegend}[1]{
+Bootstrapped empirical cumulative distribution of the number of objective function evaluations divided by dimension (FEvals/DIM) for all functions and subgroups in #1-D. The targets are chosen from $10^{[-8..2]}$ such that the reference algorithm just not reached them within a given budget of $k$ $\times$ DIM, with $8$ different values of $k$ chosen equidistant in logscale within the interval $\{0.5, \dots, 50\}$. As reference algorithm, the reference algorithm is shown as light thick line with diamond markers.
+}
+\providecommand{\bbobppfigslegend}[1]{
+Expected running time (\ERT\ in number of $f$-evaluations
+                        as $\log_{10}$ value) divided by dimension versus dimension. The target function value
+                        is chosen such that the reference algorithm just failed to achieve
+                        an \ERT\ of $10\times\DIM$. Different symbols correspond to different algorithms given in the legend of #1. Light symbols give the maximum number of function evaluations from the longest trial divided by dimension. Black stars indicate a statistically better result compared to all other algorithms with $p<0.01$ and Bonferroni correction number of dimensions (six).  
+Legend: 
+{\color{NavyBlue}$\circ$}: \algorithmA
+, {\color{Magenta}$\diamondsuit$}: \algorithmB
+, {\color{Orange}$\star$}: \algorithmC
+, {\color{CornflowerBlue}$\triangledown$}: \algorithmD
+, {\color{red}$\varhexagon$}: \algorithmE
+}
+% define some COCO/dvipsnames colors because
+% ACM style does not allow to use them directly
+\definecolor{NavyBlue}{HTML}{000080}
+\definecolor{Magenta}{HTML}{FF00FF}
+\definecolor{Orange}{HTML}{FFA500}
+\definecolor{CornflowerBlue}{HTML}{6495ED}
+\definecolor{YellowGreen}{HTML}{9ACD32}
+\definecolor{Gray}{HTML}{BEBEBE}
+\definecolor{Yellow}{HTML}{FFFF00}
+\definecolor{GreenYellow}{HTML}{ADFF2F}
+\definecolor{ForestGreen}{HTML}{228B22}
+\definecolor{Lavender}{HTML}{FFC0CB}
+\definecolor{SkyBlue}{HTML}{87CEEB}
+\definecolor{NavyBlue}{HTML}{000080}
+\definecolor{Goldenrod}{HTML}{DDF700}
+\definecolor{VioletRed}{HTML}{D02090}
+\definecolor{CornflowerBlue}{HTML}{6495ED}
+\definecolor{LimeGreen}{HTML}{32CD32}
+
+\providecommand{\ntables}{8}
+\providecommand{\pptablesfooter}{
+\end{tabularx}
+}
+\providecommand{\pptablesheader}{
+\begin{tabularx}{1.0\textwidth}{@{}c@{}|*{8}{@{}r@{}X@{}}|@{}r@{}@{}l@{}}
+\#FEs/D & \multicolumn{2}{@{}c@{}}{0.5} & \multicolumn{2}{@{}c@{}}{1} & \multicolumn{2}{@{}c@{}}{3} & \multicolumn{2}{@{}c@{}}{5} & \multicolumn{2}{@{}c@{}}{7} & \multicolumn{2}{@{}c@{}}{10} & \multicolumn{2}{@{}c@{}}{15} & \multicolumn{2}{@{}c@{}}{20} & \multicolumn{2}{|@{}l@{}}{\#succ}\\\hline
+}
+\providecommand{\algEtables}{\StrLeft{ExpM}{\ntables}}
+\providecommand{\algDtables}{\StrLeft{ExpS}{\ntables}}
+\providecommand{\algCtables}{\StrLeft{S}{\ntables}}
+\providecommand{\algBtables}{\StrLeft{M}{\ntables}}
+\providecommand{\algAtables}{\StrLeft{random}{\ntables}}
+\providecommand{\ntables}{8}
+\providecommand{\ntables}{8}
+\providecommand{\ntables}{8}
+\providecommand{\bbobpptablesmanylegend}[1]{%
+        Expected runtime (\ERT\ in number of function 
+        evaluations) divided by the respective the \ERT\ of the reference algorithm in
+        #1.
+        This \ERT\ ratio and, in braces as dispersion measure, the half difference between
+        10 and 90\%-tile of bootstrapped run lengths appear for each algorithm and 
+        %
+        run-length based target, the corresponding reference \ERT\
+        (preceded by the target \Df-value in \textit{italics}) in the first row. 
+        \#succ is the number of trials that reached the target value of the last column.
+        %
+        The median number of conducted function evaluations is additionally given in 
+        \textit{italics}, if the target in the last column was never reached.
+        Entries, succeeded by a star, are statistically significantly better (according to
+        the rank-sum test) when compared to all other algorithms of the table, with
+        $p = 0.05$ or $p = 10^{-k}$ when the number $k$ following the star is larger
+        than 1, with Bonferroni correction by the number of functions (24). A $\downarrow$ indicates the same tested against the reference algorithm. Best results are printed in bold.
+        \cocoversion}
+\providecommand{\algsfolder}{rando_M_S_ExpS_ExpM/}
+\providecommand{\algorithmA}{ExpM}
+\providecommand{\algorithmB}{ExpS}
+\providecommand{\algorithmC}{M}
+\providecommand{\algorithmD}{S}
+\providecommand{\algorithmE}{random}
+\providecommand{\bbobecdfcaptionsinglefunctionssingledim}[1]{
+Empirical cumulative distribution of simulated (bootstrapped)
+             runtimes, measured in number of objective function evaluations 
+             divided by dimension (FEvals/DIM) in 
+             dimension #1 and for those targets in
+             $10^{[-8..2]}$ that have just not been reached by 
+             the reference algorithm in a given budget of $k$ $\times$ DIM, with 
+             $8$ different values of $k$ chosen 
+             equidistant in logscale within the interval $\{0.5, \dots, 50\}$.
+}
+\providecommand{\cocoversion}{\hspace{\textwidth}\scriptsize\sffamily{}\color{Gray}Data produced with COCO v2.3.3.84}
+\providecommand{\numofalgs}{6}
+\providecommand{\bbobECDFslegend}[1]{
+Bootstrapped empirical cumulative distribution of the number of objective function evaluations divided by dimension (FEvals/DIM) for all functions and subgroups in #1-D. The targets are chosen from $10^{[-8..2]}$ such that the reference algorithm just not reached them within a given budget of $k$ $\times$ DIM, with $8$ different values of $k$ chosen equidistant in logscale within the interval $\{0.5, \dots, 50\}$. As reference algorithm, the reference algorithm is shown as light thick line with diamond markers.
+}
+\providecommand{\bbobppfigslegend}[1]{
+Expected running time (\ERT\ in number of $f$-evaluations
+                        as $\log_{10}$ value) divided by dimension versus dimension. The target function value
+                        is chosen such that the reference algorithm just failed to achieve
+                        an \ERT\ of $10\times\DIM$. Different symbols correspond to different algorithms given in the legend of #1. Light symbols give the maximum number of function evaluations from the longest trial divided by dimension. Black stars indicate a statistically better result compared to all other algorithms with $p<0.01$ and Bonferroni correction number of dimensions (six).  
+Legend: 
+{\color{NavyBlue}$\circ$}: \algorithmA
+, {\color{Magenta}$\diamondsuit$}: \algorithmB
+, {\color{Orange}$\star$}: \algorithmC
+, {\color{CornflowerBlue}$\triangledown$}: \algorithmD
+, {\color{red}$\varhexagon$}: \algorithmE
+, {\color{YellowGreen}$\triangle$}: \algorithmF
+}
+% define some COCO/dvipsnames colors because
+% ACM style does not allow to use them directly
+\definecolor{NavyBlue}{HTML}{000080}
+\definecolor{Magenta}{HTML}{FF00FF}
+\definecolor{Orange}{HTML}{FFA500}
+\definecolor{CornflowerBlue}{HTML}{6495ED}
+\definecolor{YellowGreen}{HTML}{9ACD32}
+\definecolor{Gray}{HTML}{BEBEBE}
+\definecolor{Yellow}{HTML}{FFFF00}
+\definecolor{GreenYellow}{HTML}{ADFF2F}
+\definecolor{ForestGreen}{HTML}{228B22}
+\definecolor{Lavender}{HTML}{FFC0CB}
+\definecolor{SkyBlue}{HTML}{87CEEB}
+\definecolor{NavyBlue}{HTML}{000080}
+\definecolor{Goldenrod}{HTML}{DDF700}
+\definecolor{VioletRed}{HTML}{D02090}
+\definecolor{CornflowerBlue}{HTML}{6495ED}
+\definecolor{LimeGreen}{HTML}{32CD32}
+
+\providecommand{\ntables}{8}
+\providecommand{\pptablesfooter}{
+\end{tabularx}
+}
+\providecommand{\pptablesheader}{
+\begin{tabularx}{1.0\textwidth}{@{}c@{}|*{8}{@{}r@{}X@{}}|@{}r@{}@{}l@{}}
+\#FEs/D & \multicolumn{2}{@{}c@{}}{0.5} & \multicolumn{2}{@{}c@{}}{1} & \multicolumn{2}{@{}c@{}}{3} & \multicolumn{2}{@{}c@{}}{5} & \multicolumn{2}{@{}c@{}}{7} & \multicolumn{2}{@{}c@{}}{10} & \multicolumn{2}{@{}c@{}}{15} & \multicolumn{2}{@{}c@{}}{20} & \multicolumn{2}{|@{}l@{}}{\#succ}\\\hline
+}
+\providecommand{\algFtables}{\StrLeft{ExpL}{\ntables}}
+\providecommand{\algEtables}{\StrLeft{ExpM}{\ntables}}
+\providecommand{\algDtables}{\StrLeft{ExpS}{\ntables}}
+\providecommand{\algCtables}{\StrLeft{S}{\ntables}}
+\providecommand{\algBtables}{\StrLeft{M}{\ntables}}
+\providecommand{\algAtables}{\StrLeft{random}{\ntables}}
+\providecommand{\ntables}{8}
+\providecommand{\ntables}{8}
+\providecommand{\ntables}{8}
+\providecommand{\bbobpptablesmanylegend}[1]{%
+        Expected runtime (\ERT\ in number of function 
+        evaluations) divided by the respective the \ERT\ of the reference algorithm in
+        #1.
+        This \ERT\ ratio and, in braces as dispersion measure, the half difference between
+        10 and 90\%-tile of bootstrapped run lengths appear for each algorithm and 
+        %
+        run-length based target, the corresponding reference \ERT\
+        (preceded by the target \Df-value in \textit{italics}) in the first row. 
+        \#succ is the number of trials that reached the target value of the last column.
+        %
+        The median number of conducted function evaluations is additionally given in 
+        \textit{italics}, if the target in the last column was never reached.
+        Entries, succeeded by a star, are statistically significantly better (according to
+        the rank-sum test) when compared to all other algorithms of the table, with
+        $p = 0.05$ or $p = 10^{-k}$ when the number $k$ following the star is larger
+        than 1, with Bonferroni correction by the number of functions (24). A $\downarrow$ indicates the same tested against the reference algorithm. Best results are printed in bold.
+        \cocoversion}
+\providecommand{\algsfolder}{rando_M_S_ExpS_ExpM_ExpL/}
+\providecommand{\algorithmA}{ExpL}
+\providecommand{\algorithmB}{ExpM}
+\providecommand{\algorithmC}{ExpS}
+\providecommand{\algorithmD}{M}
+\providecommand{\algorithmE}{S}
+\providecommand{\algorithmF}{random}
