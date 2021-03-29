@@ -2,7 +2,8 @@
 by Rodolphe Le Riche and Victor Picheny
 
 This git project contains the supplementary material of the article "Revisiting Bayesian Optimization in the light of the COCO benchmark" (link to be added upon publication).
-The following subdirectories contain all the results of a COCO postprocessing of optimization algorithms benchmarks. In each subdirectory, index.html is a handy way to navigate through the plots and tables. The easiest way to navigate through the results is to download the entire project (code button and download zip) and navigate by opening the index.html files in each directory with a browser.
+The following subdirectories contain all the results of a COCO postprocessing of optimization algorithms benchmarks. In each subdirectory, index.html is a handy way to navigate through the plots and tables. 
+The easiest way to look at the results is to download the entire project (`code` button and download zip) and open the index.html files in each directory with a browser.
 
 ### List of subdirectories with content summary
 * [InitialDoEsize](https://github.com/rleriche/supplement_BO_COCO/tree/main/InitialDoEsize) : tests on the initial size of the DoE (S / M / L versions of the algorithms)
@@ -14,4 +15,3 @@ The following subdirectories contain all the results of a COCO postprocessing of
 * [EiOpt](https://github.com/rleriche/supplement_BO_COCO/tree/main/EiOpt) : Effect of EI optimization mode, local (Eiloc), random (EIrandM) or restarted BFGS (M).
 * [Compare](https://github.com/rleriche/supplement_BO_COCO/tree/main/Compare) : Comparison with other state-of-the-art optimizers, BFGS, SMAC, DTS-CMA-ES, NEWUOA, random. QuadMean is EGO with a quadratic trend and the GP mean periodical acquisition.
 
-## WORK IN PROGRESS
