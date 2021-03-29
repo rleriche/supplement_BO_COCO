@@ -7,7 +7,8 @@ The following subdirectories contain all the results of a COCO postprocessing of
 ### List of subdirectories with content summary
 * [InitialDoEsize](https://github.com/rleriche/supplement_BO_COCO/tree/main/InitialDoEsize) : tests on the initial size of the DoE (S / M / L versions of the algorithms)
 * [Kernel](https://github.com/rleriche/supplement_BO_COCO/tree/main/Kernel) : exponential versus Matérn kernel (ExpS/ExpM/ExpL vs S/M)
-* [Trend](https://github.com/rleriche/supplement_BO_COCO/tree/main/Trend) : constant (M) vs. linear (LinM) vs. quadratic (QuadM) trend. LinIn means linear with interactions (i.e., $x_i x_j$ terms, i different from j)
+* [Trend](https://github.com/rleriche/supplement_BO_COCO/tree/main/Trend) : constant (M) vs. linear (LinM) vs. quadratic (QuadM) trend. LinIn means linear with interactions (i.e., <img src="https://render.githubusercontent.com/render/math?math=x_i \times x_j~,~i \ne j,"> terms
 * [Scaling](https://github.com/rleriche/supplement_BO_COCO/tree/main/Scaling) : scaling of the inputs with small/medium/large initial DoE (ScalS,ScalM,ScalL, respectively), versus S/M/L (no scaling, small/medium/large initial DoE).
+* [Warping](https://github.com/rleriche/supplement_BO_COCO/tree/main/Warping) : warping of the outputs with small/medium/large initial DoE (WarpS,WarpM,WarpL, respectively), versus S/M/L (no warping, small/medium/large initial DoE).
 
 ## WORK IN PROGRESS
