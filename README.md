@@ -7,5 +7,6 @@ The following subdirectories contain all the results of a COCO postprocessing of
 ### List of subdirectories with content summary
 * [InitialDoEsize](https://github.com/rleriche/supplement_BO_COCO/tree/main/InitialDoEsize) : tests on the initial size of the DoE (S / M / L versions of the algorithms)
 * [Kernel](https://github.com/rleriche/supplement_BO_COCO/tree/main/Kernel) : exponential versus Matérn kernel (ExpS/ExpM/ExpL vs S/M)
+* [Trend](https://github.com/rleriche/supplement_BO_COCO/tree/main/Trend) : constant (M) vs. linear (LinM) vs. quadratic (QuadM) trend
 
 ## WORK IN PROGRESS
